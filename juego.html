@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Juego Especifico</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/header.css">
+	<link rel="stylesheet" type="text/css" href="styles/footer.css">
+	<link rel="stylesheet" type="text/css" href="styles/juego.css">
+	<link rel="stylesheet" type="text/css" href="styles/compra.css">
+	<link href="https://fonts.googleapis.com/css?family=Boogaloo|Metamorphous|Oswald|Teko|Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+	<script src="script/header.js"></script>
+	<script src="script/juego.js"></script>
+</head>
+<body>
+	<header>
+	    <a href="index.html" id="logo"><img src="img/logo_principal.png" alt="logo principal"></a>
+	    <button id="buscar" type="button"><img src="img/lupa.png" alt="buscar"></button>
+	    <button id="menu" type="button"><img src="img/menu.png"></button>
+	    <form id="busqueda">
+	       	<button type="submit"><img src="img/lupa.png" alt="lupa"></button> 
+	        <input name="search" placeholder="Buscar..." type="search">
+	    </form>
+	    <nav>
+			<a href="index.html">Comunidad</a>
+			<a href="contacto.html">Ayuda</a>
+			<a href="registro.html">Iniciar Sesión</a>
+			<a href="registro.html">Registrarme</a>
+	    </nav>
+    </header>
+
+	<main>
+		<nav id="menu_principal">     <!-- No lo pongo en el header ya que no lo quiero presente en las paginas de registro y consulta -->
+			<button id="cat">Categorías</button>
+			<ul>
+				<li><a href="index.html">AVENTURA</a></li>
+				<li><a href="index.html">ACCIÓN</a></li>
+				<li><a href="index.html">DEPORTES</a></li>
+				<li><a href="index.html">GUERRA</a></li>
+				<li><a href="index.html">CARRERAS</a></li>
+				<li><a href="index.html">OTROS</a></li>
+			</ul>
+		</nav>
+		<section id="juego_info">
+			<img src="" id="portada" alt="Imagen de portada del juego">
+			<div id="info">
+				<h1></h1>
+				<div>
+				</div>
+				<form id="calificar">
+					<label for="calif">Calificar:</label>
+					<input type="number" name="calificacion" min="1" max="10" value="10">
+					<button type="submit">Enviar</button>		
+				</form>
+			</div>
+			<div id="comprar">
+				<article id="val"></article>
+				<article id="precio"></article>
+				<button type="button">Comprar</button>
+			</div>
+			<p id="descripcion"> 
+			</p>
+			<div id="imagenes">
+			
+			</div>
+		</section>
+	</main>
+	<footer>
+		<section id="medios_pago">
+			<div>Medios de pago aceptados:</div>
+			<ul>
+				<li><img src="img/visa.png" alt="Visa"></li>
+				<li><img src="img/master.png" alt="Master Card"></li>
+				<li><img src="img/paypal.png" alt="Pay Pal"></li>
+				<li><img src="img/bitcoin.png" alt="Bit Coin"></li>
+				<li><img src="img/diners.png" alt="Diners Club International"></li>
+			</ul>
+		</section>
+		<section id="datos">
+			<div id="telefono">Teléfono : +59899123456</div>
+			<div id="email">Email : contacto@catalogojuegos.com</div>
+			<div id="direccion">Calle Abcd N°1234, Montevideo, Uruguay</div>
+		</section>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    	<title>Nueva Cuenta</title>
+		<link rel="stylesheet" type="text/css" href="styles/header.css">
+		<link rel="stylesheet" type="text/css" href="styles/footer.css">
+		<link rel="stylesheet" type="text/css" href="styles/registro.css">
+		<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:500" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Boogaloo|Metamorphous|Oswald|Teko|Ubuntu|Roboto" rel="stylesheet">
+		<script src="script/header.js"></script>
+  	</head>
+  	<body>
+    	<header>
+	        <a href="index.html" id="logo"><img src="img/logo_principal.png" alt="logo principal"></a>
+	        <button id="buscar" type="button"><img src="img/lupa.png" alt="buscar"></button>
+	        <button id="menu" type="button"><img src="img/menu.png"></button>
+	        <form id="busqueda">
+	        	<button type="submit"><img src="img/lupa.png" alt="lupa"></button> 
+	        	<input name="search" placeholder="Buscar..." type="search">
+	        </form>
+	       	<nav>
+			    <a href="index.html">Comunidad</a>
+			    <a href="contacto.html">Ayuda</a>
+			    <a href="registro.html">Iniciar Sesión</a>
+			    <a href="registro.html">Registrarme</a>
+	       	</nav>
+    	</header>
+    	<main>
+	    	<h1>Nueva Cuenta</h1>
+	    	<div id="caja_principal">
+	        	<h2>¿Ya tienes cuenta?</h2>
+	        	<a href="index.html">Iniciar sesión</a>
+	        	<form id="cuadro_principal">
+	          		<div class="nombre campo">
+	          			<label for="nombre"><img src="img/user.png" alt="Nombre" height="20" width="20"></label>
+	          			<input required name="nombre" id="nombre" placeholder="Nombre..." maxlength="30" type="text">
+	          		</div>
+		           	<div class="apellido campo">
+		           		<label for="apellido"><img src="img/user.png" alt="Apellido" height="20" width="20"></label>
+		           		<input required name="apellido" id="apellido" placeholder="Apellido..." maxlength="30" type="text">
+		           	</div>
+		          	<div class="email campo">
+		          		<label for="mail"><img src="img/at.png" alt="Email"></label>
+		          		<input required name="email" id="mail" placeholder="Email..." type="email">
+		        	</div>
+		        	<div class="contrasenia campo">
+						<label for="contraseña"><img src="img/loc.png" alt="Contraseña"></label><input required name="contraseña" id="contraseña" placeholder="Contraseña..." maxlength="24" minlength="8" pattern="[a-zA-Z0-9]+" type="password">
+		            	<img src="img/info.png" title="Mínimo 8 caracteres; máximo 24 caracteres; solo mayúsculas, minúsculas y números.">
+		          	</div>
+		          	<div class="repetir campo">
+		          		<label for="repetircontr"><img src="img/loc.png" alt="Repetir_contraseña"></label>
+		            	<input required name="repetir_contraseña" id="repetircontr" placeholder="Repite Contraseña..." maxlength="24" minlength="8" pattern="[a-zA-Z0-9]+" type="password">
+		          	</div>
+		          	<div class="condiciones">
+		          		<input required name="acuerdo_condiciones" id="acuerdo" value="aceptado" type="radio">
+		          		<label for="acuerdo">Estoy de acuerdo con los terminos y las politicas de privacidad.</label>
+		          	</div>
+		          	<div class="boton">
+		          		<button type="submit">Registrarme</button>
+		          	</div>
+	        	</form>
+			</div>
+   		</main>
+    	<footer>
+			<section id="medios_pago">
+				<div>Medios de pago aceptados:</div>
+				<ul>
+					<li><img src="img/visa.png" alt="Visa"></li>
+					<li><img src="img/master.png" alt="Master Card"></li>
+					<li><img src="img/paypal.png" alt="Pay Pal"></li>
+					<li><img src="img/bitcoin.png" alt="Bit Coin"></li>
+					<li><img src="img/diners.png" alt="Diners Club International"></li>
+				</ul>
+			</section>
+			<section id="datos">
+				<div id="telefono">Teléfono : +59899123456</div>
+				<div id="email">Email : contacto@catalogojuegos.com</div>
+				<div id="direccion">Calle Abcd N°1234, Montevideo, Uruguay</div>
+			</section>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Consultas y comentarios</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/header.css">
+	<link rel="stylesheet" type="text/css" href="styles/footer.css">
+	<link rel="stylesheet" type="text/css" href="styles/contacto.css">
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Boogaloo|Metamorphous|Oswald|Teko|Ubuntu|Roboto" rel="stylesheet">
+	<script src="script/header.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo"><img src="img/logo_principal.png" alt="logo principal"></a>
+        <button id="buscar" type="button"><img src="img/lupa.png" alt="buscar"></button>
+	    <button id="menu" type="button"><img src="img/menu.png" alt="menu"></button>
+        <form id="busqueda"> 
+        	<button type="submit"><img src="img/lupa.png" alt="lupa" height="20" width="20"></button> 
+        	<input name="search" placeholder="Buscar..." type="search">
+        </form>
+       	<nav>
+			<a href="index.html">Comunidad</a>
+			<a href="contacto.html">Ayuda</a>
+			<a href="registro.html">Iniciar Sesión</a>
+			<a href="registro.html">Registrarme</a>
+       	</nav>
+    </header>
+	<main>
+		<div id="caja_principal">
+			<h1>Consultas y comentarios</h1>
+			<form>
+				<div class="campo email">
+					<label for="mail"><img src="img/at.png" alt="Email"></label>
+					<input required type="email" name="email" id="mail" placeholder="Email...">
+				</div>
+				<div class=" campo nombre">
+					<label for="nombre"><img src="img/user.png" width="20" height="20" alt="Nombre"></label>
+					<input type="text" name="nombre" id="nombre" placeholder="Nombre... (opcional)" maxlength="30">
+				</div>
+				<div class="campo comentarios">
+					<label for="comentario"><img src="img/coment.png" alt="Comentario"></label>
+					<textarea id="comentario" rows="10" cols="30" placeholder="Escribe aquí tu consulta o comentario..." required></textarea>
+				</div>
+				<div id="Enviar"><button type="submit">Enviar</button></div>
+			</form>
+		</div>
+	</main>
+	<footer>
+		<section id="medios_pago">
+			<div>Medios de pago aceptados:</div>
+			<ul>
+				<li><img src="img/visa.png" alt="Visa"></li>
+				<li><img src="img/master.png" alt="Master Card"></li>
+				<li><img src="img/paypal.png" alt="Pay Pal"></li>
+				<li><img src="img/bitcoin.png" alt="Bit Coin"></li>
+				<li><img src="img/diners.png" alt="Diners Club International"></li>
+			</ul>
+		</section>
+		<section id="datos">
+			<div id="telefono">Teléfono : +59899123456</div>
+			<div id="email">Email : contacto@catalogojuegos.com</div>
+			<div id="direccion">Calle Abcd N°1234, Montevideo, Uruguay</div>
+		</section>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="div.js"></script>
+</head>
+<body>
+    <div id="caja">
+        <form id="form_compra">
+            <div>
+                <label for="comp_cantidad">Cantidad de Copias: </label>
+                <input type="number" value="0" id="comp_cantidad" name="cantidad">
+            </div>
+            <div>
+                <label for="comp_medio">Medio de Pago: </label>
+                <select name="medio_pago" id="comp_medio">
+                    <option value="paypal">PayPal</option>
+                    <option value="debito">Débito</option>
+                    <option value="credito">Crédito</option>
+                    <option value="efectivo">Efectivo</option>
+                </select>
+            </div>
+            <div>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre...">
+            </div>
+            <div>
+                <input type="email" name="email" id="comp_email" placeholder="Email...">
+            </div>
+            <div>
+                <p>Desea un juego físico o digital: </p>
+                <div>   
+                    <label for="comp_digital">Digital</label>
+                    <input type="radio" id="comp_digital" name="tipo" checked>
+                </div>
+                <div>                
+                    <label for="comp_fisico">Físico</label>
+                    <input type="radio" id="comp_fisico" name="tipo">
+                </div>
+            </div>
+            <div id="comp_dir" class="ocultar">
+                <input type="text" name="direccion" id="comp_direccion" placeholder="Dirección...">
+            </div>
+            <div id="comp_envio" class="ocultar">
+                <p>Método de Envío: </p>
+                <div>
+                    <label for="comun">Común: </label>
+                    <input type="radio" name="metodo" id="comp_comun">
+                </div>
+                <div>
+                    <label for="comp_especial">Especial: </label>
+                    <input type="radio" id="comp_especial" name="metodo">
+                </div>
+                <div>
+                    <label for="comp_premium">Premium: </label>
+                    <input type="radio" id="comp_premium" name="metodo">
+                </div>
+            </div>
+        </form>
+        <div id="comp_total">
+            <p>Items: </p>
+            <p id="mostrar_envio">Envio: </p>
+            <p>Impuesto: </p>
+            <p>Total: </p>
+            <button>Cancelar</button>
+            <button>Comprar</button>
+        </div>
+    </div>
+</body>
+</html>
