@@ -1,0 +1,174 @@
+/********************           General           ********************/
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+footer{
+  background-color:#0d0c0c;
+  color:#fff;
+  font-family:'Ubuntu';
+  font-size:17px;
+}
+/************************ Pantalla grande ******************************/
+
+@media (min-width: 1101px){
+
+    footer #datos #email{
+      position:absolute;
+      right:40%;
+    } 
+
+    footer #datos #telefono{
+      margin-left:20px;
+    }
+
+    footer{
+      margin:0 auto 0 auto;
+      padding-bottom:20px;
+      position:relative;
+      height:175px;
+    }
+
+     footer #datos #direccion{
+      position:absolute;
+      right:20px;
+    }
+
+    footer #datos div{
+      display:inline-block;
+      font-size:1.3em;
+      margin-top:30px;
+    }
+
+    footer #medios_pago div{
+      display:inline-block;
+      position:relative;
+      bottom:15px;
+      font-size:1.7em;
+      left:20px;
+    }
+
+    footer #medios_pago ul{
+      display:inline-block;
+      font-size:0; /*Quito margenes entre los li que me agrega*/
+      position:relative;
+      left:7%;
+      top:10px;
+      height:80px;
+      width:45%;
+    }
+
+    footer #medios_pago ul li{
+      display:inline-block;
+      width:16%;
+      height:64px;
+    }
+
+    footer #medios_pago ul li img{
+      height:100%;
+      width:100%;
+    }
+}
+
+
+
+
+
+/*Pantalla mediana*/
+
+@media (min-width:724px) and (max-width:1100px){
+
+    footer{
+      padding-bottom:20px;
+      position:relative;
+      height:200px;
+    }
+
+    footer #datos #email{
+      position:absolute;
+      left:25%;
+      bottom:15px;
+    }
+
+    footer #datos #direccion{
+      position:absolute;
+      right:20px;
+    }
+
+    footer #datos div{
+    display:inline-block;
+    font-size:1.3em;
+    margin-top:30px;
+    }
+
+    footer #medios_pago div{
+    display:inline-block;
+    position:relative;
+    bottom:15px;
+    font-size:1.7em;
+    left:20px;
+  }
+
+    footer #medios_pago ul{
+      display:inline-block;
+      font-size:0; 
+      position:relative;
+      left:7%;
+      top:10px;
+      height:80px;
+      width:45%;
+    }
+
+    footer #medios_pago ul li{
+      display:inline-block;
+      width:16%;
+      height:64px;
+    }
+
+    footer #medios_pago ul li img{
+      height:100%;
+      width:100%;
+    }
+
+     footer #datos #telefono{
+      margin-left:20px;
+    }
+
+}
+
+
+/* Pantalla pequeña*/
+
+@media (max-width:723px){ /*Pantalla pequeña*/
+
+    footer{   
+      height:300px;
+      padding-top:10px;
+    }
+
+    footer #datos div{
+      text-align:center;
+      margin-bottom:20px;
+      font-size:1em;
+    }
+
+    footer #medios_pago div{
+      text-align:center;
+      font-size:1.3em;
+      margin-bottom:15px;
+    }
+
+    footer #medios_pago ul{
+      list-style-type: none;
+      font-size:0;
+      margin-bottom:20px;
+    }
+
+    footer #medios_pago ul li{
+      display:inline-block;
+      width:20%;
+      text-align:center;
+    }
+}
+

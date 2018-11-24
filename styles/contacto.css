@@ -1,0 +1,146 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+@media (min-width:602px){ /**********************     GRANDE     *************************/
+	
+	main{
+		padding-top:180px;
+	}
+	main h1{
+		font-size:3em;
+		padding-top:10px;
+		padding-bottom:10px;
+		font-family: 'Encode Sans Condensed', sans-serif;
+		text-align:center;
+	}
+	main form{
+		margin:0 auto 0 auto;
+    	width:550px;
+		padding-bottom:30px;
+	}
+	main form .nombre{
+		width:380px;
+	}
+	main form .email{
+		width:380px;
+	}
+	main form .comentarios{
+	    position:relative;
+	    width:530px;
+	    height:230px;
+	}
+}
+
+@media (max-width:601px){ /*************************     CHICA     *******************************/
+	
+	main{
+	   padding-top:80px;
+	}
+	main h1{
+		font-size:2em;
+	}
+
+	main form{
+		width:100%;
+	    padding-bottom:30px;
+	}
+
+	main form .nombre{
+		width:95%;
+	}
+
+	main form .email{
+		width:95%;
+	}
+
+	main form .comentarios{
+		height:230px;
+		width:95%;
+	}
+}
+
+/********************************     GENERAL     *************************************/
+
+main{
+	width:100%;
+	background-image:linear-gradient(90deg, #174242 ,#0e2929 25%,#0e2929 75%, #174242  ) ;
+	padding-bottom:50px;
+}
+main h1{
+	padding-top:10px;
+	padding-bottom:10px;
+	font-family: 'Encode Sans Condensed', sans-serif;
+	text-align:center;
+	color:#f00;
+}
+main form{
+	box-shadow: 0 0 5px 4px orange;
+    padding-top:60px;
+	margin-top:100px;
+}
+main form .campo{
+    margin: 0 auto 50px auto;
+    position:relative;
+}
+main form .campo label{
+	position:absolute;
+	z-index:2;
+    display:inline-block;
+    height:100%;
+    padding:5px;
+    background-color:#ffaa36;
+}
+main form .campo input{
+	position:absolute;
+	left:0;
+    border:none;
+    height:100%;
+    width:100%;
+    font-size:1em;
+    padding-left:50px;
+    padding-right:5px;
+    background-color:#fff;
+}
+main form .email{
+    height:45px;
+}
+main form .nombre{
+    height:45px;
+}
+main form .campo label img{
+    width:35px;
+    height:35px;
+}
+main form .comentarios label{
+    position:absolute;
+    background-color:transparent;
+}
+main form .comentarios textarea{
+    padding-top:10px;
+    padding-left:50px;
+    border:none;
+    width:100%;
+	max-width:100%;
+	min-width: 100%;
+	height:100%;
+	max-height:100%;
+	min-height:100%;
+    font-size:1.5em;
+    background-color:#fff;
+}
+main form button{
+    width: 100%;
+    height: 100%;
+    border:none;
+    background-color:#ffaa36;
+	font-family: 'Oswald', sans-serif;
+    font-size:1.5em;
+}
+#Enviar{
+	width:150px;
+    height:40px;
+    margin:0 auto;
+}

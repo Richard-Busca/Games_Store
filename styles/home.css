@@ -1,0 +1,392 @@
+/*****************           GENERAL           ******************/
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+main{
+	background-image:url(fondo8.jpg),linear-gradient(transparent,transparent,#071215);/*Gradiente para que la imagen se mezcle con el color y no se note el borde de la misma*/
+    background-color:#071215;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-origin:content-box;
+	padding-top:60px;
+	padding-bottom:60px;
+}
+
+#lista_principal{
+	font-size:0; /*Para quitar espacios entre elementos*/
+}
+
+#lista_principal .juego{
+	font-size:1rem; /*Le devuelvo el tamaño de fuente*/
+	text-align: center;
+	display: inline-block;
+}
+
+#lista_principal .juego_nombre{
+	font-family: 'Metamorphous', cursive;
+    color:#fff;
+    font-size:1.5em;
+    margin:5px 0;
+	padding-top:5px
+}
+
+#lista_principal .juego_precio{
+    font-size:1.9em;
+    font-family:'Teko',sans-serif;
+    color:#de0707;
+}
+
+#lista_principal .juego_imagen{
+	height:170px;
+}
+
+#lista_principal .juego_calificacion{
+	font-family: 'Ubuntu', sans-serif;
+    margin-top:20px;
+    font-size:1.3em;
+    color:#aaa;
+}
+
+#lista_principal .juego a{
+    box-shadow: 0 0 2px 2px orange; /*Sombra alrededor de la caja*/
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration:none;
+}
+
+#lista_principal .juego a:hover{
+    box-shadow: 0 0 3px 3px orange;
+}
+
+#menu_principal ul{
+	list-style-type: none;
+	font-size:0; /*Para quitar espacios entre li que pone de forma predefinida*/
+}
+
+#menu_principal ul li{
+	text-align:center;
+	font-size:1rem; /*Le devuelvo la fuente*/
+}
+
+#menu_principal ul li a{
+	color:#eee;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+    height:100%;
+    width:100%;
+	text-decoration-color: transparent; /*Si se lo quito no se lo puedo poner como efeto en "hover" */
+}
+#menu_principal ul li a:hover{
+	color:#fff;
+	text-decoration-color: #fff; /*A lo que me referia en comentario anterior*/
+}
+aside h2{
+	color: #fdd;
+    font-family: 'Boogaloo', cursive;
+    font-size:1.6em;
+    text-align:center;
+    margin-bottom:15px;
+}
+aside ol li{
+    font-size:1.5em;
+	color:#ff6f1d; /*Luego cambio color en los link y este color queda en los numeros*/
+	list-style-position: inside;
+}
+aside ol li a{
+  	font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    height: 100%;
+    display: inline-block;
+    color:#f03b3b;
+}
+aside ol li a:hover{
+    color:#fa1f1f;
+    font-weight:600;
+}
+#numero_pagina{
+    list-style-type: none;
+    width:100%;
+    height:50px;
+    font-size:0;/*Para quitar espacios*/
+    padding-top:10px;
+	margin-left:-1.5%;
+}
+#numero_pagina li{
+    display:inline-block;
+    font-size: 1.5rem;
+    width:10%;
+    height:100%;
+    text-align: center;
+}
+#numero_pagina li a{
+    text-decoration:none;
+    color:red;
+    display: inline-block;
+    width:100%;
+    text-align: center;
+}
+#numero_pagina li:first-child a{ /*Flecha anterior*/
+    color:#eee;
+}
+#numero_pagina li:last-child a{ /*Flecha siguiente */
+    color:#eee;
+}
+#numero_pagina li a:hover{
+    font-weight:900;
+    color:darkred;
+}
+#mas_nuevos h2{
+    padding-left:2.5%;
+    font-family: 'Ubuntu', sans-serif;
+    color:#eee;
+    font-size:2em;
+    padding-bottom:10px;
+}
+#mas_nuevos ul{
+    font-size:0;
+}
+
+
+/*****************       Pantalla GRANDE       ******************/
+@media (min-width: 910px){
+
+	main{
+		position:relative;
+	}
+	#cat{
+		display:none; /*Boton de Categorias oculto en la pagina grande*/
+	}
+	#lista_principal{
+	    width:75%;
+	    margin-top:400px;
+	    margin-left:2.5%;
+	}
+	#lista_principal .juego{
+	    width:30%;
+	    margin:0 3.33% 15px 0 ;
+	}
+	#lista_principal article .juego_imagen{
+    	width: 100%;
+	}
+	#menu_principal ul{
+	    background-color:rgba(0,0,0,0.1);
+	    height:80px;
+	}
+	#menu_principal ul li{
+	    display:inline-block;
+	    width:16.6666%;
+	    height:100%;
+	    font-size:1rem;
+	}
+	#menu_principal ul li a{
+	    line-height: 70px;
+	    font-size:1.45em;
+	    
+	}
+	aside{ /*Barra de mas comprados*/
+		position:absolute;
+		width:20%;
+	    box-shadow: 0 0 2px 1px  #1ffa68;
+	    border-top:2px solid  #1ffa68;
+	    border-bottom:2px solid  #1ffa68;
+	    border-left:2px solid  #1ffa68;
+	    right:0;
+	    top:545px;
+	    padding-top:20px;
+	    padding-bottom:20px;
+	}
+	aside ol{
+	    width:100%;
+	    padding-left:30px;
+	}
+	aside ol li{
+	   margin-top:25px;
+	}
+	#mas_nuevos{
+		margin-top:100px;
+	}
+	#mas_nuevos ul li{
+	    display:inline-block;
+	    text-align:center;
+	    width:20%;
+		height:20%;
+	}
+	#mas_nuevos ul li img{
+		width:100%;
+		height:170px;
+	}
+	#mas_nuevos ul li a{
+		display:inline-block;
+		width:90%;
+		padding:10px 0;
+	}
+	#mas_nuevos ul li a:hover{
+		width:100%;
+	}
+
+
+
+}
+
+/*****************      Pantalla MEDIANA       ******************/
+@media (max-width: 909px) and (min-width: 620px){
+	#lista_principal{
+		width:95%;
+		margin:0 auto 0 auto;
+	    position:relative;
+	    bottom:150px;
+	    margin-top:75px;
+	}
+	#lista_principal .juego{
+	    width:32%;
+	    margin:0 0 1% 1%;
+	}
+	#lista_principal .juego_imagen{
+    	width: 100%;
+	}
+	#menu_principal ul{
+	    background-color:rgba(0,0,0,0.1);
+	    height:80px;
+	}
+	#menu_principal ul li{
+	    display:inline-block;
+	    width:16.6666%;
+	    height:100%;
+	    font-size:1rem;
+	}
+	#menu_principal ul li a{
+	    line-height: 70px;
+	    font-size:1.25em;
+	    text-decoration-color: transparent;
+	    font-weight: 600;
+	    
+	}
+	#menu_principal ul li a:hover{
+	    color:#fff;
+	    text-decoration-color: #fff;
+	}
+	#cat{ /*Boton de categorias oculto en pantalla mediana y grande*/
+		display:none;
+	}
+	aside{
+	    height:300px;
+	    position:relative;
+	    top:1590px;
+	}
+	aside ol{
+	    list-style-position: inside;
+	    width:60%;
+	    margin:0 auto;
+	    color:darkred;
+	}
+	aside ol li{
+	    float:left;
+	    width:50%;
+	}
+	#mas_nuevos{
+	    margin-top:350px;
+	}
+	#mas_nuevos h2{
+		margin-bottom: 10px;
+	}  
+	#mas_nuevos ul li{
+	    display:inline-block;
+	    width:50%;
+	    margin-bottom:10px;
+	    text-align:center;
+	}
+	#mas_nuevos ul li img{
+	    width:80%;
+	    height:130px;
+	}
+
+}
+
+/*****************       Pantalla CHICA        ******************/
+@media (max-width:619px){
+	@media (min-width: 401px){ /*Si entra aca la pantalla esta entre 401 y 619 px y en ese caso muestro los juegos en filas de dos*/
+		#lista_principal{
+			position: relative;
+			bottom:550px;
+		}
+		#lista_principal .juego{
+			width:45%;
+			margin-left:3.3%;
+			margin-bottom:10px;
+		}
+		#lista_principal .juego_imagen{
+			width:100%;
+		}
+		aside{
+		   position: relative;
+		   top:2230px;
+	    }
+		#mas_nuevos{
+			margin-top:350px;
+		}
+	}
+
+	#menu_principal ul{
+	    background-color:rgba(0,0,0,0.6);
+	    width:100%;
+	    padding-bottom:5px;
+		padding-top:5px;
+	    display:none;
+	}
+	#menu_principal ul li{
+	    margin-bottom:9px;
+	    font-size:1.4rem;
+		margin-bottom:20px;
+	}
+	#menu_principal button{
+	    background-color:rgba(0,0,0,0.5);
+	    border:none;
+	    width:100%;
+	    height:45px;
+	    font-size:1.1em;
+	    color:#fff;
+	}
+	
+	aside ol li{
+		text-align: center;
+	}
+	#mas_nuevos ul li{
+	    display:inline-block;
+	    width:50%;
+	    text-align:center;
+	    margin-bottom:10px;
+	}
+	#mas_nuevos ul li img{
+	    width:90%;
+	}
+
+
+
+
+
+}
+@media(max-width: 400px){ /*En menos de 400 px los muestro de a uno*/
+	#lista_principal{
+		position:relative;
+		bottom:600px;
+	}
+	#lista_principal .juego{
+		width:95%;
+		margin-left:2.5%;
+		margin-bottom:10px;
+	}
+	#lista_principal .juego_imagen{
+		width:100%;
+	}
+	aside{
+		position:relative;
+		top:4100px;
+	}
+	#mas_nuevos{
+		margin-top:350px;
+	}
+}
