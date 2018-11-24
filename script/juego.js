@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded",function(){
 
-    var url = "https://richard-busca.github.io/Games_Store/script/richard_busca.json";
+    var url = "https://richard-busca.github.io/Games_Store/richard_busca.json";
     var pedido = new XMLHttpRequest();
     pedido.open("GET",url);
     pedido.responseType = "json";
