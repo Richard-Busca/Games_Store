@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded",function(){
 
-    var url = "https://jvalenzani.github.io/json-grupo68-2018/richard_busca.json";
+    var url = "richard_busca.json";
     var pedido = new XMLHttpRequest();
     pedido.open("GET",url);
     pedido.responseType = "json";
